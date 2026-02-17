@@ -10,17 +10,19 @@
   h2 { color: #2E7D32; margin-top: 30px; }
   .lang-toggle { text-align: right; margin-bottom: 20px; }
   .lang-toggle a { padding: 6px 16px; background: #4CAF50; color: #fff; text-decoration: none; border-radius: 4px; }
-  .en { display: none; }
+  body.lang-ja .en { display: none; }
+  body.lang-en .ja { display: none; }
   small { color: #888; }
 </style>
 <script>
 function toggleLang() {
-  document.querySelectorAll('.ja').forEach(e => e.style.display = e.style.display === 'none' ? '' : 'none');
-  document.querySelectorAll('.en').forEach(e => e.style.display = e.style.display === 'none' ? '' : 'none');
+  var b = document.body;
+  if (b.classList.contains('lang-ja')) { b.classList.replace('lang-ja', 'lang-en'); }
+  else { b.classList.replace('lang-en', 'lang-ja'); }
 }
 </script>
 </head>
-<body>
+<body class="lang-ja">
 <div class="lang-toggle"><a href="javascript:toggleLang()">English / 日本語</a></div>
 
 <div class="ja">
