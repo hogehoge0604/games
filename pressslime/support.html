@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Support - PressSlime</title>
+<style>
+  body { font-family: -apple-system, sans-serif; max-width: 700px; margin: 0 auto; padding: 20px; line-height: 1.7; color: #333; }
+  h1 { border-bottom: 2px solid #4CAF50; padding-bottom: 10px; }
+  h2 { color: #2E7D32; margin-top: 30px; }
+  .lang-toggle { text-align: right; margin-bottom: 20px; }
+  .lang-toggle a { padding: 6px 16px; background: #4CAF50; color: #fff; text-decoration: none; border-radius: 4px; }
+  .en { display: none; }
+  a.btn { display: inline-block; padding: 12px 24px; background: #333; color: #fff; text-decoration: none; border-radius: 6px; margin-top: 10px; }
+</style>
+<script>
+function toggleLang() {
+  document.querySelectorAll('.ja').forEach(e => e.style.display = e.style.display === 'none' ? '' : 'none');
+  document.querySelectorAll('.en').forEach(e => e.style.display = e.style.display === 'none' ? '' : 'none');
+}
+</script>
+</head>
+<body>
+<div class="lang-toggle"><a href="javascript:toggleLang()">English / 日本語</a></div>
+
+<div class="ja">
+<h1>PressSlime サポート</h1>
+
+<h2>お問い合わせ</h2>
+<p>バグ報告や機能リクエストは GitHub Issues よりお願いします。</p>
+<a class="btn" href="https://github.com/hogehoge0604/ochimono_game/issues" target="_blank">GitHub Issues</a>
+
+<h2>よくある質問</h2>
+
+<h3>Q: ゲームの遊び方は？</h3>
+<p>スワイプでスライムを移動し、ブロックを押して同じ色を3つ以上繋げると消えます。隣のブロックをタッチするとスライムの色に変えられます。上から降ってくるブロックに潰されないように生き延びましょう！</p>
+
+<h3>Q: 広告を消せますか？</h3>
+<p>現時点では広告を非表示にする機能はありません。</p>
+
+<h3>Q: データは保存されますか？</h3>
+<p>言語設定のみデバイス内に保存されます。スコアやプレイデータは外部に送信されません。</p>
+
+<h2>開発者</h2>
+<p>Yusuke Masuoka</p>
+<p><a href="privacy-policy.html">プライバシーポリシー</a></p>
+</div>
+
+<div class="en">
+<h1>PressSlime Support</h1>
+
+<h2>Contact</h2>
+<p>Please report bugs or feature requests via GitHub Issues.</p>
+<a class="btn" href="https://github.com/hogehoge0604/ochimono_game/issues" target="_blank">GitHub Issues</a>
+
+<h2>FAQ</h2>
+
+<h3>Q: How do I play?</h3>
+<p>Swipe to move the slime, push blocks to connect 3 or more of the same color to clear them. Touch adjacent blocks to change them to the slime's color. Survive as long as you can without getting crushed by falling blocks!</p>
+
+<h3>Q: Can I remove ads?</h3>
+<p>There is currently no option to disable ads.</p>
+
+<h3>Q: Is my data saved?</h3>
+<p>Only language settings are saved locally on your device. Scores and play data are not sent to external servers.</p>
+
+<h2>Developer</h2>
+<p>Yusuke Masuoka</p>
+<p><a href="privacy-policy.html">Privacy Policy</a></p>
+</div>
+</body>
+</html>
