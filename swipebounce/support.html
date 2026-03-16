@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Support - SwipeBounce</title>
+<style>
+  body { font-family: -apple-system, sans-serif; max-width: 700px; margin: 0 auto; padding: 20px; line-height: 1.7; color: #333; }
+  h1 { border-bottom: 2px solid #2196F3; padding-bottom: 10px; }
+  h2 { color: #1565C0; margin-top: 30px; }
+  .lang-toggle { text-align: right; margin-bottom: 20px; }
+  .lang-toggle a { padding: 6px 16px; background: #2196F3; color: #fff; text-decoration: none; border-radius: 4px; }
+  body.lang-ja .en { display: none; }
+  body.lang-en .ja { display: none; }
+  a.btn { display: inline-block; padding: 12px 24px; background: #333; color: #fff; text-decoration: none; border-radius: 6px; margin-top: 10px; }
+</style>
+<script>
+function toggleLang() {
+  var b = document.body;
+  if (b.classList.contains('lang-ja')) { b.classList.replace('lang-ja', 'lang-en'); }
+  else { b.classList.replace('lang-en', 'lang-ja'); }
+}
+</script>
+</head>
+<body class="lang-ja">
+<div class="lang-toggle"><a href="javascript:toggleLang()">English / 日本語</a></div>
+
+<div class="ja">
+<h1>SwipeBounce サポート</h1>
+
+<h2>お問い合わせ</h2>
+<p>バグ報告や機能リクエストは GitHub Issues よりお願いします。</p>
+<a class="btn" href="https://github.com/hogehoge0604/swipeline_game/issues" target="_blank">GitHub Issues</a>
+
+<h2>よくある質問</h2>
+
+<h3>Q: ゲームの遊び方は？</h3>
+<p>スワイプで空中にトランポリンを作り、キャラクターをバウンドさせてできるだけ高く飛ばしましょう！高度に応じてスコアが加算されます。隕石を避けながら、アイテムやコインを集めてハイスコアを目指しましょう！</p>
+
+<h3>Q: 広告を消せますか？</h3>
+<p>現時点では広告を非表示にする機能はありません。</p>
+
+<h3>Q: データは保存されますか？</h3>
+<p>言語設定のみデバイス内に保存されます。スコアやプレイデータは外部に送信されません。</p>
+
+<h2>開発者</h2>
+<p>Yusuke Masuoka</p>
+<p><a href="privacy-policy.html">プライバシーポリシー</a></p>
+</div>
+
+<div class="en">
+<h1>SwipeBounce Support</h1>
+
+<h2>Contact</h2>
+<p>Please report bugs or feature requests via GitHub Issues.</p>
+<a class="btn" href="https://github.com/hogehoge0604/swipeline_game/issues" target="_blank">GitHub Issues</a>
+
+<h2>FAQ</h2>
+
+<h3>Q: How do I play?</h3>
+<p>Swipe to create trampolines in the air and bounce your character as high as possible! Your score increases based on altitude. Dodge meteorites while collecting items and coins to aim for the highest score!</p>
+
+<h3>Q: Can I remove ads?</h3>
+<p>There is currently no option to disable ads.</p>
+
+<h3>Q: Is my data saved?</h3>
+<p>Only language settings are saved locally on your device. Scores and play data are not sent to external servers.</p>
+
+<h2>Developer</h2>
+<p>Yusuke Masuoka</p>
+<p><a href="privacy-policy.html">Privacy Policy</a></p>
+</div>
+</body>
+</html>
